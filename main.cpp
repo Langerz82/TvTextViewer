@@ -307,7 +307,7 @@ int main(int argc, char** argv)
   SDL_GL_SetAttribute(SDL_GL_STENCIL_SIZE, 8);
 
   SDL_DisplayMode displayMode;
-  SDL_GetDesktopDisplayMode(0, &displayMode);
+  SDL_GetCurrentDisplayMode(0, &displayMode);
 
   auto pWindow = SDL_CreateWindow(
     "Log Viewer",
